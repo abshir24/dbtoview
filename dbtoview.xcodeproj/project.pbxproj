@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0372B2D4EB16B38FA892F0B /* Pods_dbtoview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69873264F4F65BBE995559C1 /* Pods_dbtoview.framework */; };
 		F487DC4A22E4160000D8B124 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487DC4922E4160000D8B124 /* AppDelegate.swift */; };
 		F487DC4C22E4160000D8B124 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487DC4B22E4160000D8B124 /* ViewController.swift */; };
 		F487DC4F22E4160000D8B124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F487DC4D22E4160000D8B124 /* Main.storyboard */; };
 		F487DC5122E4160100D8B124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F487DC5022E4160100D8B124 /* Assets.xcassets */; };
 		F487DC5422E4160100D8B124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F487DC5222E4160100D8B124 /* LaunchScreen.storyboard */; };
+		F487DC5E22E4185200D8B124 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F487DC5D22E4185200D8B124 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36549912DDE4F8D1F0F2EC84 /* Pods-dbtoview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dbtoview.debug.xcconfig"; path = "Target Support Files/Pods-dbtoview/Pods-dbtoview.debug.xcconfig"; sourceTree = "<group>"; };
+		5AEA9EC584A5902D6E27EFB6 /* Pods-dbtoview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dbtoview.release.xcconfig"; path = "Target Support Files/Pods-dbtoview/Pods-dbtoview.release.xcconfig"; sourceTree = "<group>"; };
+		69873264F4F65BBE995559C1 /* Pods_dbtoview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dbtoview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F487DC4622E4160000D8B124 /* dbtoview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dbtoview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F487DC4922E4160000D8B124 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F487DC4B22E4160000D8B124 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		F487DC5022E4160100D8B124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F487DC5322E4160100D8B124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F487DC5522E4160100D8B124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F487DC5D22E4185200D8B124 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0372B2D4EB16B38FA892F0B /* Pods_dbtoview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61EA4497BBC3BB5CFF7C4A5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69873264F4F65BBE995559C1 /* Pods_dbtoview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E73F57A42FEBD9623A6118D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36549912DDE4F8D1F0F2EC84 /* Pods-dbtoview.debug.xcconfig */,
+				5AEA9EC584A5902D6E27EFB6 /* Pods-dbtoview.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F487DC3D22E4160000D8B124 = {
 			isa = PBXGroup;
 			children = (
 				F487DC4822E4160000D8B124 /* dbtoview */,
 				F487DC4722E4160000D8B124 /* Products */,
+				E73F57A42FEBD9623A6118D8 /* Pods */,
+				61EA4497BBC3BB5CFF7C4A5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +84,7 @@
 				F487DC4922E4160000D8B124 /* AppDelegate.swift */,
 				F487DC4B22E4160000D8B124 /* ViewController.swift */,
 				F487DC4D22E4160000D8B124 /* Main.storyboard */,
+				F487DC5D22E4185200D8B124 /* GoogleService-Info.plist */,
 				F487DC5022E4160100D8B124 /* Assets.xcassets */,
 				F487DC5222E4160100D8B124 /* LaunchScreen.storyboard */,
 				F487DC5522E4160100D8B124 /* Info.plist */,
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F487DC5822E4160100D8B124 /* Build configuration list for PBXNativeTarget "dbtoview" */;
 			buildPhases = (
+				5CE4147393C3B43F32FA4687 /* [CP] Check Pods Manifest.lock */,
 				F487DC4222E4160000D8B124 /* Sources */,
 				F487DC4322E4160000D8B124 /* Frameworks */,
 				F487DC4422E4160000D8B124 /* Resources */,
+				2C3176CF020AB17035D4B3A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				F487DC5422E4160100D8B124 /* LaunchScreen.storyboard in Resources */,
+				F487DC5E22E4185200D8B124 /* GoogleService-Info.plist in Resources */,
 				F487DC5122E4160100D8B124 /* Assets.xcassets in Resources */,
 				F487DC4F22E4160000D8B124 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C3176CF020AB17035D4B3A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dbtoview/Pods-dbtoview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dbtoview/Pods-dbtoview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dbtoview/Pods-dbtoview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CE4147393C3B43F32FA4687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dbtoview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F487DC4222E4160000D8B124 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		F487DC5922E4160100D8B124 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36549912DDE4F8D1F0F2EC84 /* Pods-dbtoview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +371,7 @@
 		};
 		F487DC5A22E4160100D8B124 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AEA9EC584A5902D6E27EFB6 /* Pods-dbtoview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -6,5 +6,6 @@ target 'dbtoview' do
   use_frameworks!
 
   # Pods for dbtoview
-
+	pod 'Firebase/Core'
+ 	pod 'Firebase/Database'
 end
