@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F487DC5122E4160100D8B124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F487DC5022E4160100D8B124 /* Assets.xcassets */; };
 		F487DC5422E4160100D8B124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F487DC5222E4160100D8B124 /* LaunchScreen.storyboard */; };
 		F487DC5E22E4185200D8B124 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F487DC5D22E4185200D8B124 /* GoogleService-Info.plist */; };
+		F487DC6022E41BB800D8B124 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487DC5F22E41BB800D8B124 /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F487DC5322E4160100D8B124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F487DC5522E4160100D8B124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F487DC5D22E4185200D8B124 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F487DC5F22E41BB800D8B124 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 				36549912DDE4F8D1F0F2EC84 /* Pods-dbtoview.debug.xcconfig */,
 				5AEA9EC584A5902D6E27EFB6 /* Pods-dbtoview.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +85,7 @@
 				F487DC4922E4160000D8B124 /* AppDelegate.swift */,
 				F487DC4B22E4160000D8B124 /* ViewController.swift */,
 				F487DC4D22E4160000D8B124 /* Main.storyboard */,
+				F487DC5F22E41BB800D8B124 /* Images.swift */,
 				F487DC5D22E4185200D8B124 /* GoogleService-Info.plist */,
 				F487DC5022E4160100D8B124 /* Assets.xcassets */,
 				F487DC5222E4160100D8B124 /* LaunchScreen.storyboard */,
@@ -209,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F487DC4C22E4160000D8B124 /* ViewController.swift in Sources */,
+				F487DC6022E41BB800D8B124 /* Images.swift in Sources */,
 				F487DC4A22E4160000D8B124 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
