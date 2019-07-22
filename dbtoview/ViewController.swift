@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import Speech
 
 class ViewController: UIViewController {
     
@@ -18,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
     var currentImageIndex: Int = 0
+    
+    let synthesizer = AVSpeechSynthesizer()
+    
+    var myUtterance = AVSpeechUtterance(string:"")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +86,8 @@ class ViewController: UIViewController {
         
         self.textView.text = image.caption
         
+        //speak the description to the user
+        speakDescription(image.caption)
         
         //Resets image index
         if self.currentImageIndex < 9{
@@ -90,34 +97,21 @@ class ViewController: UIViewController {
         }
     }
     
+    //this function reads the description text out to the user.
+    
+    func speakDescription(_ description:String)
+    {
+        self.myUtterance = AVSpeechUtterance(string:description)
+        
+        self.myUtterance.rate = 0.5
+        
+        self.synthesizer.speak(self.myUtterance)
+    }
+    
     
     @IBAction func nextImage(_ sender: UIButton) {
         self.display()
     }
     
-//    func displayImg(url: URL)
-//    {
-//        let data = try? Data(contentsOf: url)
-//
-//        if let imageData = data {
-//            let image = UIImage(data: imageData)
-//            imgView.image = image!
-//        }
-//        else{
-//            print("Error getting the image. Please make sure the url is correct!")
-//        }
-//    }
-    
-//    @IBAction func showNextQuestion(_ sender: UIButton) {
-//        currentQuestionIndex += 1
-//        if currentQuestionIndex == quizzy.count{ //The quiz class has a computed property for the number of questions
-//            currentQuestionIndex = 0
-//        }
-//
-//        let question: String = quizzy.question(number: currentQuestionIndex)
-//        questionLabel.text = question
-//        answerLabel.text = "???"
-//    }
-
 }
 
