@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     
     var imgs:[Images] = []
   
+    @IBOutlet weak var imgView: UIImageView!
+    
+    @IBOutlet weak var textView: UITextView!
+    
+    var currentImageIndex: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -43,13 +49,75 @@ class ViewController: UIViewController {
         
     }
     
+    //Adds images to the the image object array
     func addToImages(_ image:Images)
     {
-        print("INFO ", image.apiCaption)
         self.imgs.append(image)
         
+        if(self.imgs.count == 10)
+        {
+            self.display()
+        }
     }
-
+    
+    //This function will handle all of the view functionality as well as
+    //having the machine read all of the information in the caption
+    
+    func display()
+    {
+        let image:Images = self.imgs[currentImageIndex]
+        
+        let url:URL = URL(string:image.url)!
+        
+        let data = try? Data(contentsOf: url)
+        
+        if let imageData = data {
+            let viewImage = UIImage(data: imageData)
+            imgView.image = viewImage!
+        }
+        else{
+            print("Error getting the image. Please make sure the url is correct!")
+        }
+        
+        self.textView.text = image.caption
+        
+        
+        //Resets image index
+        if self.currentImageIndex < 9{
+            self.currentImageIndex += 1
+        }else{
+            self.currentImageIndex = 0
+        }
+    }
+    
+    
+    @IBAction func nextImage(_ sender: UIButton) {
+        self.display()
+    }
+    
+//    func displayImg(url: URL)
+//    {
+//        let data = try? Data(contentsOf: url)
+//
+//        if let imageData = data {
+//            let image = UIImage(data: imageData)
+//            imgView.image = image!
+//        }
+//        else{
+//            print("Error getting the image. Please make sure the url is correct!")
+//        }
+//    }
+    
+//    @IBAction func showNextQuestion(_ sender: UIButton) {
+//        currentQuestionIndex += 1
+//        if currentQuestionIndex == quizzy.count{ //The quiz class has a computed property for the number of questions
+//            currentQuestionIndex = 0
+//        }
+//
+//        let question: String = quizzy.question(number: currentQuestionIndex)
+//        questionLabel.text = question
+//        answerLabel.text = "???"
+//    }
 
 }
 
