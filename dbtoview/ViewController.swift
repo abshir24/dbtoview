@@ -70,6 +70,8 @@ class ViewController: UIViewController {
     
     func display()
     {
+        synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate.self)
+        
         let image:Images = self.imgs[currentImageIndex]
         
         let url:URL = URL(string:image.url)!

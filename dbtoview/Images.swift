@@ -22,7 +22,7 @@ class Images{
         
         apiCaption = apicap
         
-        isDescribed = isDes == "false" ? false : true
+        isDescribed = isDes.lowercased() == "false" ? false : true
     }
         
     
