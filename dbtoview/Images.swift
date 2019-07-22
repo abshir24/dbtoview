@@ -1,6 +1,6 @@
 //
-//  Images.swift
-//  ImageDescription
+//  Image.swift
+
 //
 //  Created by Abshir Mohamed on 7/18/19.
 //  Copyright © 2019 Rashad Jaraysa. All rights reserved.
